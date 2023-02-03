@@ -1,0 +1,245 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+
+}
+
+
+:root{
+  --one:#00d0bf;
+  --tow:#e53f3f;
+  --dark:#000;
+  --box:2px 2px 10px var(--dark);
+}
+
+/* header */
+.navbar{
+  background-color: var(--one);
+}
+
+/* ========start home======= */
+
+.home{
+  margin: 110px 0;
+  background-image: url(../img/banner-dec-right.png);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.home .row h5{
+  font-size: 40px;
+}
+.h-span{
+  font-size: 50px;
+  color: var(--one);
+
+}
+.home .row a{
+  background-color: var(--one);
+}
+.home .row a:hover{
+  background-color: var(--tow);
+}
+/* ========end home======= */
+
+/* =======start customers ====== */
+.iteem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .iteem img{
+  width: 200px;
+}
+.customers .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+  gap: 50px;
+  padding: 30px;
+}
+.customers .container  .box{
+  text-align: center;
+  box-shadow: var(--box);
+  border-bottom: 2px solid var(--one);
+  border-radius:50%;
+}
+.customers .container .box .one-1::after{
+  content: "%";
+}
+.customers .container .box .one-2::after{
+  content: "+";
+}
+.customers .container .box h5{
+  border-bottom: 2px solid var(--one);
+}
+/* =======end   customers ====== */
+/* ======start about======= */
+
+
+.about .row {
+  text-align: center;
+}
+.about .row h5{
+  font-size: 30px;
+  background-color: var(--one);
+  width: max-content;
+  margin: 0 auto;
+  padding:0px 10px 10px 10px;
+  border-radius: 10px;
+  color: var(--tow);
+}
+/* ======end about======= */
+
+
+/*=========== start services ===================*/
+.services{
+  padding: 40px 0;
+}
+.services .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+  gap: 40px;
+  box-shadow: var(--box);
+  border-radius: 10px;
+  padding: 40px;
+}
+.services .container .box {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid var(--one);
+  border-radius: 10px;
+}
+.services .container .box:hover{
+  outline: 3px solid var(--one);
+  transition: .2s;
+  transform: scale(1.1);
+
+}
+.services .container .box h1{
+  font-size: 24px;
+}
+/*=========== end services ===================*/
+/* <!-- ==========start pries============ --> */
+.pries {
+  text-align: center;
+  padding: 30px ;
+}
+.pries .p-center{
+  text-align: center;
+  margin: 30px auto;
+  padding: 0 70px;
+  font-size: 19px;
+}
+
+.pries .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+  gap: 20px;
+}
+.pries .container .box{
+  text-align: center;
+  border: 1px solid var(--one);
+  padding: 10px;
+  border-radius: 10px;
+}
+.pries .container .box:hover{
+  box-shadow: 1px 1px 10px var(--dark);
+  transform: scale(1);
+  transition: .3s;
+
+}
+.pries .container .box p{
+  font-size: 20px;
+}
+.pries .container .box .one{
+  background-color:#f4c03f;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.pries .container .box .tow{
+  background-color:#2845d7;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.pries .container .box .three{
+  background-color:#ff0000;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+/* <!-- ==========end pries============ --> */
+/* ==============start footer=========================== */
+.footer{
+  background-image: url(/img/contact-bg.jpg);
+}
+.footer .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+.footer .container ul .h-li{
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+
+
+@media screen and (max-width:767px) {
+  .footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
+    gap: 20px;
+  }
+}
+
+
+
+/* coil as  */
+.bott .btn-p{
+  position: fixed;
+  bottom: 10px;
+  left:13px;
+  z-index: 122;
+  animation: waving .6s ease-in-out infinite alternate;
+}
+.bott .btn-p img{
+  border-radius: 40px;
+  width: 50px;
+  border: 4px solid #eee;
+  box-shadow: var(--box);
+}
+.bott .btn-w{
+  background-color: var(--one);
+  padding: 10px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  animation: waving .6s ease-in-out infinite alternate;
+  z-index: 122;
+  border: 2px solid #eee;
+  box-shadow: var(--box);
+}
+.bott .btn-w a{
+  color: #eee;
+  text-decoration: none;
+}
+.bott .btn-w a i{
+  padding: 0 5px;
+}
+@keyframes waving{
+  from{
+    transform: scale(1.1);
+  }
+  to{
+    transform: scale(1.2);
+
+  }
+}
+
+
+/* ==============end footer ===========================*/

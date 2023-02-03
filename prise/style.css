@@ -1,0 +1,69 @@
+.home{
+  background-image: url(../img/contact-bg.jpg);
+  height: 60vh;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 100%);
+  padding: 50px;
+}
+
+.home h1{
+  text-align: center;
+  font-size: 50px;
+  color:#fff;
+  border-bottom: 4px solid var(--one);
+  width: max-content;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+
+
+.palns .container{
+  display: grid;
+  padding: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
+  gap: 20px;
+}
+
+
+
+.palns .container .box hr{
+  width: 200px;
+  height: 7px;
+  border-radius: 30px;
+  background-color: var(--one);
+}
+
+table{
+  border-radius: 10px;
+  border: 2px solid var(--one);
+}
+
+table tr {
+  border: 2px solid var(--one);
+
+}
+.table thead{
+  background-color: var(--one) !important;
+  border-radius: 10px !important;
+}
+
+
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #dee9e7;
+  box-shadow: 0 0 10px #000000 inset;
+  border-radius: 40px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #5daa7b;
+  border-radius: 90px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #007b2f;
+}

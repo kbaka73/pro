@@ -1,0 +1,86 @@
+.home{
+  background-image: url(../img/contact-bg.jpg);
+  height: 60vh;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 100%);
+  padding: 50px;
+}
+
+.home h1{
+  text-align: center;
+  font-size: 50px;
+  color:#fff;
+  border-bottom: 4px solid var(--one);
+  width: max-content;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+/* my */
+.skils{
+  position: relative;
+}
+
+.clients{
+  padding: 30px;
+  background-image: url(../img/contact-bg.jpg);
+  color: #eee;
+}
+.skils span{
+  background-color:var(--tow);
+  transition: 1.5s;
+  color: var(--one);
+}
+.headd h3{
+  font-size: 35px ;
+}
+.headd p{
+  text-align: center;
+  color: #eee;
+  font-size: 18px;
+}
+.customers{
+  padding: 60px;
+}
+.customers h1{
+  font-size: 24px;
+  border-bottom: 2px solid var(--one);
+  width: max-content;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: var(--box);
+}
+
+.faq{
+  padding: 60px;
+  z-index: -1;
+}
+.faq .container{
+  padding: 10px;
+}
+.faq h1{
+  font-size: 20px;
+  text-align: center;
+}
+.faq p{
+  text-align: center;
+  font-size: 14px;
+}
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #dee9e7;
+  box-shadow: 0 0 10px #000000 inset;
+  border-radius: 40px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #5daa7b;
+  border-radius: 90px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #007b2f;
+}
